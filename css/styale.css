@@ -10,6 +10,7 @@ body {
     margin: 0;
     margin-bottom: 40px;
 }
+
 /*header del sitio web*/
 header {
    background-color: white;
@@ -26,10 +27,11 @@ header {
     .hamburguesa {
       display: flex;
       flex-wrap: wrap;  
-      padding-left: 10px;
-     
+      padding-left: 10px; 
+      transform: translate(30px,50px);
       
     }
+    
     ul.hum{
         display: none;
       }
@@ -53,6 +55,7 @@ header {
         font-weight: bold;
         text-align: center;
         user-select: none;
+        transform: scale(1.3);
       }
       
      
@@ -278,6 +281,7 @@ main {
     flex-wrap: wrap;
     background-color: white;
 }
+
 .boton1 {
     background-image: url(../imagenes/momia.webp);
     grid-column: 2/7;
@@ -396,12 +400,8 @@ footer i:hover {
      padding:2px;
 
  }
-
- 
-
  textarea.contacto {
-     width: 100%;
-     
+     width: 100%;   
  }
  input.enviar {
      width: 10%;
@@ -409,7 +409,8 @@ footer i:hover {
  section.registro {
      display: flex;
      flex-wrap: wrap;
-     background-color: darkgray;
+     background-image: linear-gradient(to right,rgba(0,0,0,1), rgba(225,225,225,0)),url(../imagenes/jeroglificos.png);
+     flex-shrink: 50%;
       flex-shrink: 50%;
       width: 250%;
       margin-top: 50px;
@@ -633,6 +634,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
     max-height: 100vh;
     width:70% ;
+    transform: translate(200px);
 }
 .not {
     border: 2px solid black;
@@ -654,6 +656,7 @@ main {
     line-height: 30px;
     display: flex;
     flex-wrap: wrap;
+    transform: translate(1012px);
 }
 
 .noticia2 {
@@ -854,7 +857,7 @@ input.enviar {
 section.registro {
     display: flex;
     flex-wrap: wrap;
-    background-color: darkgray;
+    background-image: linear-gradient(to right,rgba(0,0,0,1), rgba(225,225,225,0)),url(../imagenes/jeroglificos.png);
      flex-shrink: 50%;
      width: 500px;
      max-height: 300px;
